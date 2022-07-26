@@ -7,6 +7,8 @@ const picArray = [
   "img/pic4.png"
 ]
 
+let intervalId = null;
+
 const selected = [];
 
 const pics = document.getElementById('pics');
@@ -32,6 +34,8 @@ const createLi = () => {
       current = i;
       pics.src = picArray[current];
       upDate(current);
+      clearInterval(intervalId);
+      intervalId = setInterval(changeSlide, 3000);
     });
   }
 }
@@ -56,6 +60,6 @@ const changeSlide = () => {
   pics.src = picArray[current];
 };
 
-setInterval(changeSlide, 3000);
+intervalId = setInterval(changeSlide, 3000);
 
 console.log(selected);
