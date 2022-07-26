@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.topSlide {
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  /* animation: fade 1s 1; */
+}
+
+/* @keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+} */
+
+#thumb {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 50px auto 0;
+}
+
+#thumb li {
+  width: 20%;
+}
+
+#thumb img {
+  width: 100%;
+}
+
+.select {
+  background: silver;
+  padding: 5px;
+}
